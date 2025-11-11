@@ -171,10 +171,10 @@ print()
 print("문제 14) 다음 배열의 중앙값과 75 백분위수를 구하세요.")
 arr14 = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 print(f"원본: {arr14}")
-# median =
-# percentile_75 =
-# print(f"중앙값: {median}")
-# print(f"75 백분위수: {percentile_75}")
+median = np.median(arr14)
+percentile_75 = np.percentile(arr14, 75)
+print(f"중앙값: {median}")
+print(f"75 백분위수: {percentile_75}")
 print()
 
 
@@ -191,8 +191,8 @@ print("문제 15) 다음 배열에서 연속된 중복값을 제거하세요.")
 print("예: [1,1,2,2,2,3,1,1] → [1,2,3,1]")
 arr15 = np.array([1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 5, 5, 5, 6])
 print(f"원본: {arr15}")
-# result_15 =
-# print(f"결과: {result_15}")
+result_15 = np.unique(arr15)
+print(f"결과: {result_15}")
 # 힌트: arr[1:] != arr[:-1]
 print()
 
